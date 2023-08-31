@@ -16,7 +16,7 @@ def weather():
             continue
         
         try:
-            response = requests.get(f"http://api.weatherapi.com/v1/forecast.json?key=ac34155ee0394078aab104816230207&q={city}&days={days}")
+            response = requests.get(f"http://api.weatherapi.com/v1/forecast.json?key={YOUR_API_KEY}&q={city}&days={days}")
             response.raise_for_status()
             data = response.json()
 
